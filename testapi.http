@@ -1,0 +1,75 @@
+GET http://localhost:3002/users
+
+
+###
+POST http://localhost:3002/signup
+Content-Type: application/json 
+
+{
+    "username" : "sanjay",
+    "password" : "san123",
+    "email":"testapiexample@api.com",
+    "phone_number":"2345345",
+    "address":"road123",
+    "city":"sikar",
+    "state":"mp",
+    "country" :"america",
+    "postal_code":"332001",
+    "gender":"male",
+    "date_of_birth":"2000-08-13"
+}
+
+###
+POST http://localhost:3002/login
+Content-Type: application/json 
+
+{
+    "email":"isha@gmail.com",   
+    "password" : "isha@123"
+}
+
+###
+
+GET http://localhost:3002/getuserprofile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlzaGFAZ21haWwuY29tIiwicGFzc3dvcmQiOiJpc2hhQDEyMyIsImlhdCI6MTc2MTU3MDA0OCwiZXhwIjoxNzYxNTczNjQ4fQ.i-l6dLIBUMjWad23YT7uFBuLeCvymahv5LILT_Ua_so
+
+###
+GET http://localhost:3002/api/products?category=shoes&rating=&same=1
+
+###
+GET http://localhost:3002/api/product/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlzaGFAZ21haWwuY29tIiwicGFzc3dvcmQiOiJpc2hhQDEyMyIsImlhdCI6MTc2MTU3MDA0OCwiZXhwIjoxNzYxNTczNjQ4fQ.i-l6dLIBUMjWad23YT7uFBuLeCvymahv5LILT_Ua_so
+
+###
+POST http://localhost:3002/wishlist/add/1
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlzaGFAZ21haWwuY29tIiwicGFzc3dvcmQiOiJpc2hhQDEyMyIsImlhdCI6MTc2MTU3MDA0OCwiZXhwIjoxNzYxNTczNjQ4fQ.i-l6dLIBUMjWad23YT7uFBuLeCvymahv5LILT_Ua_so
+
+###
+GET http://localhost:3002/wishlist/get
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlzaGFAZ21haWwuY29tIiwicGFzc3dvcmQiOiJpc2hhQDEyMyIsImlhdCI6MTc2MTU3MDA0OCwiZXhwIjoxNzYxNTczNjQ4fQ.i-l6dLIBUMjWad23YT7uFBuLeCvymahv5LILT_Ua_so
+
+###
+POST http://localhost:3002/cart/add/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlzaGFAZ21haWwuY29tIiwicGFzc3dvcmQiOiJpc2hhQDEyMyIsImlhdCI6MTc2MTU3MDA0OCwiZXhwIjoxNzYxNTczNjQ4fQ.i-l6dLIBUMjWad23YT7uFBuLeCvymahv5LILT_Ua_so
+Content-Type: application/json
+
+{
+    "quantity": 1
+}
+
+###
+GET http://localhost:3002/cart/get
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlzaGFAZ21haWwuY29tIiwicGFzc3dvcmQiOiJpc2hhQDEyMyIsImlhdCI6MTc2MTU3MDA0OCwiZXhwIjoxNzYxNTczNjQ4fQ.i-l6dLIBUMjWad23YT7uFBuLeCvymahv5LILT_Ua_so
+
+###
+DELETE http://localhost:3002/cart/delete/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlzaGFAZ21haWwuY29tIiwicGFzc3dvcmQiOiJpc2hhQDEyMyIsImlhdCI6MTc2MTU3MDA0OCwiZXhwIjoxNzYxNTczNjQ4fQ.i-l6dLIBUMjWad23YT7uFBuLeCvymahv5LILT_Ua_so
+
+###
+GET http://localhost:3002/getcategory
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlzaGFAZ21haWwuY29tIiwicGFzc3dvcmQiOiJpc2hhQDEyMyIsImlhdCI6MTc2MTU3MDA0OCwiZXhwIjoxNzYxNTczNjQ4fQ.i-l6dLIBUMjWad23YT7uFBuLeCvymahv5LILT_Ua_so
+
+###
+GET http://localhost:3002/products/category/shoes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImlzaGFAZ21haWwuY29tIiwicGFzc3dvcmQiOiJpc2hhQDEyMyIsImlhdCI6MTc2MTU3MDA0OCwiZXhwIjoxNzYxNTczNjQ4fQ.i-l6dLIBUMjWad23YT7uFBuLeCvymahv5LILT_Ua_so
